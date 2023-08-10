@@ -129,19 +129,25 @@
       {Lead Engineer - Military Services}{March 2018 -- Present}
       {Quandis Inc.}{Rancho Santa Margarita, CA}
       \resumeItemListStart
-        \resumeItem{Spearheaded the design and execution of a scalable gRPC-capable service; enabling our team to decommission an existing non-scalable solution. Wrote the protocol buffer definitions and the streaming endpoints associated with the application server; also created client packages for easy adoption.}
-        \resumeItem{Employed C\#/.NET in crafting a REST API that integrates with DOD services, delivering immediate Military verification to our clientele. This involved the creation of an SDK and a backend session manager as an IHostedService, utilizing EntityFramework as the ORM to establish a connection with an MSSQL database. This initiative contributed to generating an additional annual revenue of \$300K.}
-        \resumeItem {Overcame significant latency issues tied to our central "Name Permutation" feature by re-engineering it to function completely in memory, integrating AsyncEnumerable patterns, and eliminating database read/write operations. This enhancement increased throughput and cut latency up to 60\% for large name collections.}
-        \resumeItem{Introduced a HealthCheckService complemented by A/B load testing for new releases and routine checks of public endpoints. This enhanced application oversight and minimized post-deployment issues.}
+        \resumeItem{Spearheaded the design and execution of a scalable gRPC service; enabling our team to decommission an existing non-scalable solution. Wrote the protocol buffer definitions and the streaming endpoints associated with the application server; also created client packages for easy adoption.}
+        \resumeItem{Employed C\#/.NET in crafting a REST API that integrates with DOD services, delivering immediate Military verification to our clientele. This involved the creation of an SDK and a backend session manager as an IHostedService, utilizing EntityFramework as the ORM to establish a connection with a MSSQL database. This initiative contributed to generating an additional annual revenue of \$300K.}
+        \resumeItem {Overcame significant latency issues tied to our central "Name Permutation" feature by re-engineering it to function completely in memory, eliminating database read/write operations entirely. This enhancement increased throughput and cut latency up to 60\% for large name collections.}
+        \resumeItem{Implemented a robust logging and monitoring solution using tools like ASP.NET Core Health Checks, Azure ApplicationInsights, and AWS Cloudwatch. This setup provided real-time insights into system performance and resource management, enabling proactive issue resolution and a 45\% decrease in support tickets related to system downtime.}
+
+%        \resumeItem{Implemented a suite of application monitoring strategies including a HealthCheck publisher service to routinely log application health, JMeter scripts for automated load testing on candidate releases, and routine availability checks of API endpoints. Results demonstrated a reduction post-deployment issues, faster issue identification, and elevated levels of application trust.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
     \resumeSubSubheading
      {Software Engineer}{November 2016 - March 2018}
      \resumeItemListStart
-        \resumeItem{Developed a redaction feature that scans PDF data streams, buffers patterns resembling SSNs and DOBs, then removes and reassembles the data. This buffering solution fortified system security, mitigating unintentional sensitive data exposure.}
+
+        \resumeItem{Introduced continuous integration (CI) pipeline standards, leveraging tools like Azure Pipelines by writing YAML workflows to automatically build, test, package, and publish code updates. This streamlined the software release process, resulting in faster time-to-market for new features and updates, while ensuring high-quality code through automated tests and code coverage reports.}
         
-        \resumeItem{Enhanced the order upload page using JavaScript and jQuery, allowing for multiple PDF package orders with distinct processing options. Integrated intuitive "plus/minus" buttons for package adjustment, leading to positive customer feedback and streamlined testing.}
+        \resumeItem{Developed a redaction feature to scan PDF data streams, locate buffers patterns resembling SSNs and DOBs before removing and reassembles the data. This buffering solution fortified system security, mitigating unintentional sensitive data exposure.}
+        
+        \resumeItem{Solved user experience issues related to order submission by writing a reusable component library using Javascript, jQuery, and HTML/CSS that rendered client preferences on load. Customer feedback suggested ease of use and contributed to increased adoption of the underlying feature.}
+    
      \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -151,11 +157,11 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{cookbook.io} $|$ \emph{Python, Flask, AWS S3, Kafka, C++, PostgreSQL, Docker}}{June 2023 -- Present}
+          {\textbf{cookbook.io} $|$ \emph{Python, Flask, S3, Kafka, C++, PostgreSQL, Docker}}{June 2023 -- Present}
           \resumeItemListStart
-            \resumeItem{Wrote a REST API using Python, Flask, and SQLAlchemy that allows users to perform CRUD operations on recipe data stored on a PostgreSQL DB.}
-            \resumeItem{Developed an OCR interface in C++ that allows users to digitize their cookbooks by using Google's Tesseract OCR for text extraction and OpenAI's API for data cleaning/parsing.} 
-            \resumeItem{Facilitated service communication by creating a dedicated Apache Kafka service broker; allowing dedicated services to monitor specific topics as resources become available.}
+            \resumeItem{Wrote a REST API using Python, Flask, and SQLAlchemy that allows users to interface with data over a PostgreSQL database.}
+            \resumeItem{Developed an OCR interface in C++ that leverages Google's Tessearct OCR engine and OpenAI's API, allowing users to digitize any text-containing image and making the parsed text available for import, search, and indexing.} 
+            \resumeItem{Facilitated service operation by creating a dedicated Apache Kafka service broker; allowing dedicated services to monitor specific topics as resources become available.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -164,17 +170,24 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of California, Irvine}{Irvine, CA}
-      {Sociology B.Sc., Minor in Statistics}{Co. 2016}
+      {Sociology B.Sc., Minor in Statistics}{Sept 2016}
       \resumeSubheading
       {Undergraduate Research Assistant}{Irvine, CA}
       {Networks, Computation, and Social Dynamics Lab}{Oct 2015 -- Oct 2016}
   \resumeSubHeadingListEnd
 
  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     {Used R and MySQL to clean Twitter data.} \\
-     {Created data apps and data visualizations on RShiny and D3.js. Presented at INSNA Sunbelt Conference.}
-    }}
+    \small{
+    \item{
+    \begin{itemize}
+        \item{Wrote R and SQL scripts to query Twiter data.}
+        \item{Created data models, apps, and visualizations on RShiny and D3.js}
+        %\item{Presented at INSNA Sunbelt Conference}
+    \end{itemize}
+     %{Used R and MySQL to clean Twitter data.} \\
+     %{Created data apps and data visualizations on RShiny and D3.js. %Presented at INSNA Sunbelt Conference.}
+    }
+    }
  \end{itemize}
  
 %-----------PROGRAMMING SKILLS-----------
